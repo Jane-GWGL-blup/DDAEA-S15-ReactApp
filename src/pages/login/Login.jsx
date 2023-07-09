@@ -96,58 +96,5 @@ const Login = ({ loginUserApiRequest }) => {
     </div>
   );
 };
-/** 
- *     <Container>
-      <Row className="mt-5 justify-content-center">
-        <Col md={12}>
-          <h1>Login</h1>
-          <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>User Name</Form.Label>
-              <Form.Control
-                name="UserName"
-                required
-                type="text"
-                placeholder="Ingresa tu nombre de usuario"
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                name="Password"
-                required
-                type="password"
-                placeholder="Contraseña"
-              />
-            </Form.Group>
 
-            <Button variant="primary" type="submit">
-              {loginUserResponseState &&
-              loginUserResponseState.loading === true ? (
-                <Spinner
-                  as="span"
-                  animation="border"
-                  size="sm"
-                  role="status"
-                  aria-hidden="true"
-                />
-              ) : (
-                ""
-              )}
-              Login
-            </Button>
-            <Alert
-              show={
-                loginUserResponseState &&
-                loginUserResponseState.error === "wrong credentials"
-              }
-              variant="danger"
-            >
-              Wrong credentials
-            </Alert>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
-*/
 export default Login;
